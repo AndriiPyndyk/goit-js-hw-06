@@ -12,5 +12,3 @@ validationInput.addEventListener("blur", () => {
     validationInput.classList.add("invalid");
   }
 });
-
-console.log(Number.isNan(requiredLength));
