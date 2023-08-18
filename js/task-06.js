@@ -1,0 +1,16 @@
+const validationInput = document.querySelector("#validation-input");
+
+validationInput.addEventListener("blur", () => {
+  const requiredLength = parseInt(validationInput.dataset.length);
+  const inputValue = validationInput.value;
+
+  if (inputValue.length === requiredLength) {
+    validationInput.classList.remove("invalid");
+    validationInput.classList.add("valid");
+  } else {
+    validationInput.classList.remove("valid");
+    validationInput.classList.add("invalid");
+  }
+});
+
+console.log(Number.isNan(requiredLength));
